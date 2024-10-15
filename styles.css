@@ -1,30 +1,74 @@
+/* General body styling */
 body {
-    text-align: center;
-  }
-  
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Better font choice for readability */
+  background-color: #f0f0f0; /* Light background for contrast */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add some padding */
+}
+
+/* Generator button styling */
+#generator-button {
+  padding: 15px 30px; /* Increase padding for a better click area */
+  border: 2px solid #333; /* Darker border for better visibility */
+  border-radius: 8px; /* Rounder corners for modern look */
+  font-weight: bold; /* Correct font weight property */
+  font-size: 1.5rem; /* Use rem for better scaling */
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+}
+
+/* Button hover effect */
+#generator-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Meme wrapper styling */
+#meme-wrapper {
+  border: 4px solid #333; /* Darker border for better visibility */
+  border-radius: 10px; /* Rounder corners */
+  width: 90%; /* Make it responsive */
+  max-width: 700px; /* Limit max width */
+  height: auto; /* Allow height to adjust based on content */
+  padding: 10px; /* More padding */
+  margin: 20px auto; /* Centered with top/bottom margin */
+  background-color: white; /* White background for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Meme image styling */
+#random-meme {
+  border-radius: 8px; /* Rounder corners for image */
+  width: 100%; /* Full width of the wrapper */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Limit height to avoid overflow */
+  margin-top: 10px; /* Slightly increased margin */
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Meme image hover effect */
+#random-meme:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* Caption styling */
+#random-caption {
+  margin: 10px 0 0; /* Add top margin for separation */
+  font-size: 1.2rem; /* Increase font size for readability */
+  color: #555; /* Dark grey for contrast */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   #generator-button {
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    font-weight: bolder;
-    font-size: xx-large;
+      font-size: 1.2rem; /* Slightly smaller button on mobile */
+      padding: 10px 20px; /* Adjust padding */
   }
-  
+
   #meme-wrapper {
-    border: 4px solid black;
-    width: 700px;
-    height: 500px;
-    padding: 5px;
-    margin: 15px auto;
+      width: 95%; /* Full width on smaller screens */
   }
-  
-  #random-meme {
-    border-radius: 5px;
-    width: 500px;
-    height: 400px;
-    margin-top: 8px;
-  }
-  
-  #random-caption {
-    margin: 0;
-  }
+}
